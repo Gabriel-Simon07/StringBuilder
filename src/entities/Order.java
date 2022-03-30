@@ -9,7 +9,7 @@ public class Order {
 	private Date moment;
 	private OrderStatus status;
 
-	private List<OrderItem> itens = new ArrayList<OrderItem>();
+	private List<OrderItem> items = new ArrayList<OrderItem>();
 	
 	public Order() { }
 			
@@ -37,14 +37,19 @@ public class Order {
 	}
 
 	public void addItem(OrderItem item) {
-		itens.add(item);
+		items.add(item);
 	}
 	
 	public void removeItem(OrderItem item) {
-		itens.remove(item);
+		items.remove(item);
 	}
 	
-//	public double total() {
-//		return ;
-//	}
+	public double total() {
+		double sum = 0.0;
+		for(OrderItem item : items) {
+			sum += sum + item.subTotal();
+		}
+		return sum;
+		
+	}
 }
