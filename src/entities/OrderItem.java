@@ -4,12 +4,14 @@ public class OrderItem {
 
 	private Integer quantity;
 	private double price;
+	private Product product;
 
 	public OrderItem() { }
 		
-	public OrderItem(Integer quantity, double price) {
+	public OrderItem(Integer quantity, double price,Product product) {
 		this.quantity = quantity;
 		this.price = price;
+		this.product = product;
 	}
 
 	public Integer getQuantity() {
@@ -31,4 +33,11 @@ public class OrderItem {
 	public double subTotal() {
 		return quantity * price;
 	}
+
+	@Override
+	public String toString() {
+		return quantity + "\n" + price + "\n" + product;
+	}
+
+	
 }
