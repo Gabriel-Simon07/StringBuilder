@@ -1,6 +1,6 @@
 package account;
 
-public class SavingAccount extends Account{
+public class SavingAccount extends Account {
 
 	private Double interestRate;
 
