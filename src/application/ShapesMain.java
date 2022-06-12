@@ -37,12 +37,11 @@ public class ShapesMain {
 				double radius = sc.nextDouble();
 				shapesList.add(new Circle(radius));
 			}
-			
+		}
 			System.out.println("\nSHAPES AREAS:\n");
 			for(Shape shapes : shapesList) {
-				System.out.println(shapes.area());
+				System.out.println(String.format("%.2f", shapes.area()));
 			}
-			sc.close();
-		}
+		sc.close();
 	}
 }
