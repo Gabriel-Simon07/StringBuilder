@@ -13,7 +13,7 @@ public class People {
         this.healthSpending = healthSpending;
     }
 
-    public String getName() {
+	public String getName() {
 		return name;
 	}
 
@@ -21,4 +21,19 @@ public class People {
 		this.name = name;
 	}
 
+	public double getAnnualIncome() {
+		return annualIncome;
+	}
+
+	public void setAnnualIncome(double annualIncome) {
+		this.annualIncome = annualIncome;
+	}
+
+	public double getHealthSpending() {
+		return healthSpending;
+	}
+
+	public void setHealthSpending(double healthSpending) {
+		this.healthSpending = healthSpending;
+	}
 }
